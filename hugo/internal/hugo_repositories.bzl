@@ -1,9 +1,9 @@
-HUGO_BUILD_FILE = """    
+HUGO_BUILD_FILE = """
 package(default_visibility = ["//visibility:public"])
 exports_files( ["hugo"] )
 """
 
-def hugo_repositories(hugo_version = "0.31.1",
+def hugo_repositories(hugo_version = "0.49.2",
                       hugo_os_arch = "Linux-64bit",
                       hugo_sha256 = None,
 ):
@@ -19,4 +19,4 @@ def hugo_repositories(hugo_version = "0.31.1",
         sha_256 = hugo_sha256,
     )
 
-    
+
